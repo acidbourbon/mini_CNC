@@ -1,7 +1,7 @@
 # mini_CNC
 AVR code for ATMega32u2 based mini CNC drill press.
 For a detailed description of this project, see 
-https://acidbourbon.wordpress.com/?p=354
+https://acidbourbon.wordpress.com/2015/02/01/semi-automated-drill-press-table-for-pcb-manufacture/
 
 - Prerequisites (name of Ubuntu/Debian packages):
 avr-libc
