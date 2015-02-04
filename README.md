@@ -16,9 +16,16 @@ sudo apt-get install avr-libc gcc-avr dfu-programmer
 
 - compilation instructions (Linux shell):
 
+get the code (if you downloaded and unpacked the .zip file, you can obviously ignore skip this step)
+
 ````bash
 cd /some/empty/directory/
 git clone https://github.com/acidbourbon/mini_CNC
+````
+get the LUFA source code, and put it in ./LUFA/LUFA-130303/
+finally compile and program the microcontroller code
+
+````bash
 mkdir LUFA
 cd LUFA
 wget http://www.github.com/abcminiuser/lufa/archive/LUFA-130303.zip
@@ -36,5 +43,6 @@ If dfu-programmer is not allowed to access the ATMega32u2 chip, try
 sudo make program
 ````
 
+You probably should be able to port this software to ATMega32u4, if you change the TARGET parameter in the makefile.
 
 
